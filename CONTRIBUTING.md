@@ -1,24 +1,73 @@
-# Contributing 
-Thank you for considering contributing your writeup to this repository! Your contribution is invaluable and helps others learn and grow in the field of cybersecurity and CTF challenges. Please follow the guidelines below to ensure your writeup is added correctly.
+# Contributing
 
-## Contribution 
-Please note that we follow a specific file structure that must be adhered to in order for your pull request to be approved. Ensure your files are organized as shown below when making your pull request: <br>
-- **/ctf-name/category/challenge/writeup** <br>
-- ctf-name: The name of the CTF (e.g., SunshineCTF-2024) <br>
-- category: The category of the challenge (e.g., reverse engineering, web, etc.) <br>
-- challenge: The name of the challenge <br>
+Thank you for considering contributing your writeup to this repository! Your efforts help others learn and grow in the field of cybersecurity and CTF challenges. Please follow the guidelines below to ensure your writeup is added correctly.
 
-Steps to make a pull request
-- Step 1: Fork the Repository <br>
-- Step 2: Clone Your Fork <br>
-- Step 3: Make a new branch (optional but recommended) <br> 
-- Step 4: Push your changes to your forked repo <br>
-- Step 5: Create a pull request <br>
-(Navigate to your forked repository and click the Pull Request button to make a pull request)
+## Contribution Guidelines
 
+### Structure
+
+All writeups must follow the repository structure:
+
+```
+CTF-Writeups/
+├── Competition-Name/
+│   ├── Category/
+│   │   ├── challenge-name.md
+```
+
+### Example Structure
+
+```
+CTF-Writeups/
+├── IrisCTF-2025/
+│   ├── Web/
+│   │   ├── bad-todo.md
+```
+
+- **Competition-Name**: The name of the CTF (e.g., SunshineCTF-2024).
+- **Category**: The type of challenge (e.g., Web, Cryptography, Reverse Engineering, etc.).
+- **Challenge-Name**: The specific challenge writeup.
+
+### Steps to Contribute
+
+1. **Fork the Repository**:
+   - Click the "Fork" button to create a copy of the repository in your account.
+
+2. **Clone Your Fork**:
+   - Clone the repository locally:
+     ```bash
+     git clone https://github.com/your-username/CTF-Writeups.git
+     ```
+
+3. **Create a New Branch** *(optional but recommended)*:
+   - Create a branch for your contribution:
+     ```bash
+     git checkout -b my-contribution
+     ```
+
+4. **Add Your Writeup**:
+   - Follow the structure described above.
+   - Include any supporting files (e.g., scripts, payloads) in a subfolder named after the challenge.
+
+5. **Commit and Push Your Changes**:
+   - Stage, commit, and push your changes:
+     ```bash
+     git add .
+     git commit -m "Added writeup for [challenge-name]"
+     git push origin my-contribution
+     ```
+
+6. **Submit a Pull Request**:
+   - Navigate to your forked repository on GitHub and create a pull request to merge your changes into the main repository.
+
+---
 
 ## Need Help?
-If you encounter any issues or have questions, feel free to:
 
-- Open an issue in the repository. <br>
-- Ask us on our discord.
+If you encounter any issues or have questions, feel free to:
+- Open an issue in the repository.
+- Ask us on our Discord server.
+
+---
+
+Your contributions are invaluable, and we appreciate your effort to support the community. Together, let’s make this repository a fantastic resource for all CTF enthusiasts!
