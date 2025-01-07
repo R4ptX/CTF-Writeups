@@ -1,18 +1,60 @@
-# Highlights
+# CTF Writeups Repository
 
-Since September 1st, 2024, we’ve competed in **6 CTFs** and currently rank **#846** with **58.366 rating points**.  
-Our main goal for 2025 is to break into the **Top 30 on CTFtime**.
+Welcome to the **CTF Writeups Repository**! This repository contains detailed solutions and explanations for Capture The Flag (CTF) challenges across various categories and competitions. Our goal is to document strategies and techniques for learning and reference.
 
-| **Event**            | **Place** | **Rating** |
-|-----------------------|-----------|------------|
-| BlueHens CTF 2024     | 15th      | 14.828     |
-| SunshineCTF 2024      | 23rd      | 18.273     |
-| PwnSec CTF 2024       | 27th      | 3.460      |
-| IRON CTF 2024         | 34th      | 8.441      |
-| World Wide CTF 2024   | 46th      | 4.313      |
-| SpookyCTF 2024        | 48th      | 9.051      |
+## Structure
 
-We look forward to achieving more milestones in 2025 and beyond!
+The repository is organized as follows:
 
+```
+CTF-Writeups/
+├── Competition-Name/
+│   ├── Category/
+│   │   ├── challenge-name.md
+```
 
+### Example Structure:
 
+```
+CTF-Writeups/
+├── IrisCTF-2025/
+│   ├── Web/
+│   │   ├── bad-todo.md
+```
+
+## Purpose
+
+This repository is designed to:
+- **Educate and Inform**: Provide insights into solving various types of CTF challenges.
+- **Document Techniques**: Preserve methods for exploitation, debugging, and problem-solving.
+- **Support Collaboration**: Share strategies with the cybersecurity community.
+
+## Contribution Guidelines
+
+We encourage contributions to expand this repository! If you’d like to contribute:
+1. Fork the repository.
+2. Follow the directory structure described above.
+3. Submit a pull request with your writeup and any associated files.
+
+For detailed guidelines, check our [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+## Categories Covered
+
+- **Web Exploitation**
+- **Cryptography**
+- **Reverse Engineering**
+- **Forensics**
+- **Binary Exploitation (Pwn)**
+- **Miscellaneous**
+
+## Acknowledgments
+
+Special thanks to all contributors and the wider cybersecurity community for their support and inspiration in solving these challenges.
+
+## Disclaimer
+
+All writeups are for educational purposes only. Please use the knowledge responsibly and adhere to ethical hacking practices.
+
+---
+
+Explore, learn, and contribute to the exciting world of Capture The Flag challenges!
