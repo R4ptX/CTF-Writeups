@@ -21,3 +21,6 @@ This is an interactive Python writeup and walkthrough for the "Shake My Hand" 20
 
 ## Manual install/run
 Download shakemyhand-walkthrough.py, make sure you have scapy installed (pip install scapy) and run the file with "python ./shakemyhand-walkthrough.py"
+
+## Credits
+the original writeup is availabe at https://github.com/AdmiralSYN-ACKbar/shakemyhand-walkthrough
