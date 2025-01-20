@@ -6,7 +6,7 @@ At first we may thought it was a known plaintext attack. But because of the init
 
 Now we have 2 problems. How long is the flag, and how to make the encryption rounds XOR-ed with zero bytes
 
-For the latter, we can just set the first n blocks with zero strings. This will make the 4th - nth block of encrypted input an encrypted zero string (remember that the 1st block is random byte).
+For the latter, we can just set the first n blocks with zero strings. This will make the 4th until nth block of encrypted input an encrypted zero string (remember that the 1st block is random byte).
 As for the former, we can try some inputs with different length and note when the encrypted message lengthen. Then we know that the flag length is 53 bytes (note that the padded plaintext length = ciphertext length in AES). This means that, initially, we need to have 'zeros' to be at least 4 block plus 3 block (because the decrypted encrypted zero string starts from the third block at the decryption round) of zero strings
 
 Here is the solver script
