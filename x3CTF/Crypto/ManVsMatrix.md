@@ -43,15 +43,15 @@ It is separed in a sequence of $9$ times $3$ bytes and each of the $9$ sequences
 Then, a known $g=2 \in GF(p)$ and a fixed state vector $s_0 \in GF(p)^3$ are initialized. \
 
 Then, the numbers are generated the following way.\
-From a fixed state $s_i$, the next state $s_{i+1}$ as $s_{i+1} = (g^{s_{i,k}})_{1 \le k \le 3}$.
+From a fixed state $s_i$, the next state $s_{i+1}$ as $$s_{i+1} = (g^{s_{i,k}})_{1 \le k \le 3}$$.
 We generate the number $(Ms_i)^T s_{i+1}$ where $T$ denotes the transposed of the vector and then $i$ is incremented by $1$ and $s_{i+2}$ is computed. \
 
 The only thing to notice here is that all the state vectors $s_i$ can be precomputed since all the parameters to compute them are known. Also, all the equations are linear in the coordinates of $M$.\
 Since we are given $9$ samples, we can obtain $9$ linear equations in the coordinates of $M$, and those equations are independent. Thus, we only have to solve a linear system to conclude. \
-Here is the solving script.
+Here is part of the solving script (only the part corresponding to matrix inversion in the working field, which was done with sage commandline, has been skipped).
 
 ```{python}
-# On travaille dans Fp où p est le premier suivant
+# We work in Fp where p is the following prime
 p = 16777259
 
 init_vect = [77, 118, 109]
@@ -68,6 +68,8 @@ for i in range(9):
 
 linear_sys_vects = []
 
+# Building the matrix corresponding to the linear system to solve
+
 for i in range(len(liste_vect)-1):
     linear_vect = []
     si = liste_vect[i]
@@ -77,22 +79,19 @@ for i in range(len(liste_vect)-1):
             linear_vect.append((sinext[k]*si[l])%p)
     linear_sys_vects.append(linear_vect)
 
-# J'ai plus qu'à inverser cette grosse matrice fois les samples
-
 import numpy as np
 
 matrix = np.array(linear_sys_vects)
-inverse_matrix = np.linalg.inv(matrix)
-
 samples = [6192533, 82371, 86024, 4218430, 12259879, 16442850, 6736271, 7418630, 15483781]
 
-results = np.dot(inverse_matrix, samples)
+# I have used sagemath to map the matrix into GF(p), to invert it in this field and to multiply it by the samples
+# I have obtained the following results
 
-print(results)
+obtained = [7090542, 3355762, 6252149, 5137236, 3223662, 3497780, 7484255, 7174495, 6698102]
 
+# Now, we simply have to convert them back to bytes in order to recover the flag
 
 from Crypto.Util.number import long_to_bytes
-obtained = [7090542, 3355762, 6252149, 5137236, 3223662, 3497780, 7484255, 7174495, 6698102]
 
 flag = b""
 for elem in obtained:
