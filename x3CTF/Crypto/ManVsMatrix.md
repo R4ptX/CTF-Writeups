@@ -39,15 +39,12 @@ The principle of the challenge is the following: the flag is used to initialize 
 
 The seed which is composed of 27 bytes is used the following way.
 It is separed in a sequence of 9 times 3 bytes and each of the $9$ sequences of 3 bytes is converted into an integer which is then mapped into GF(p) for a known prime $p$ (the next prime after 2^24) and used as a coordinate of a 
-```math
-$3 \times 3$``` matrix $M$. \
+```math $3 \times 3$``` matrix $M$. \
 
-Then, a known ```math
-$g=2 \in GF(p)$``` and a fixed state vector $s_0 \in GF(p)^3$ are initialized. \
+Then, a known ```math $g=2 \in GF(p)$``` and a fixed state vector $s_0 \in GF(p)^3$ are initialized. \
 
 Then, the numbers are generated the following way.\
-From a fixed state $s_i$, the next state $s_{i+1}$ as ```math
-$$s_{i+1} = (g^{s_{i,k}})_{1 \le k \le 3}$$```.
+From a fixed state $s_i$, the next state $s_{i+1}$ as ```math $$s_{i+1} = (g^{s_{i,k}})_{1 \le k \le 3}$$```.
 We generate the number $(Ms_i)^T s_{i+1}$ where $T$ denotes the transposed of the vector and then $i$ is incremented by $1$ and $s_{i+2}$ is computed. \
 
 The only thing to notice here is that all the state vectors $s_i$ can be precomputed since all the parameters to compute them are known. Also, all the equations are linear in the coordinates of $M$.\
