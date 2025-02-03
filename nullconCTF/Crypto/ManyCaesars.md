@@ -39,7 +39,7 @@ def solve(indices_list):
 print(len(chars))
 ```
 
-# Solve
+# Solution
 
 Here is the solving script for this challenge which was mostly contributed by @flumm1ba3r.
 The idea is simply to recover each key by bruteforcing the possibilities for each word and then keeping only the valid plainword located in a dictionnary (here enchant dictionnary).

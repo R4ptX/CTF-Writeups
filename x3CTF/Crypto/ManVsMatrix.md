@@ -1,7 +1,7 @@
 The challenge was about reversing a weak PRNG.
 Here is the source code of the challenge.
 
-```{python}
+```python
 from sage.all import *
 from Crypto.Util.number import bytes_to_long
 
