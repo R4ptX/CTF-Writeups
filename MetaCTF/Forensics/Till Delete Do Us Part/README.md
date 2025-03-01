@@ -14,4 +14,4 @@ For this challenge in particular, DMDE (Disk Editor and Data Recovery Software) 
 __Step 2: Open the usb file on DMDE.__
 If you do the recovery correctly, there should be a new img file that appears that's called usb.1. You click this file aswell and it should open up to this structure: 
 
-![usb](usb_file_structure.png)
+![usb_structure](imgs/usb_file_structure.png)
