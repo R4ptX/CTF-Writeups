@@ -15,3 +15,7 @@ __Step 2: Open the usb file on DMDE.__
 If you do the recovery correctly, there should be a new img file that appears that's called usb.1. You click this file aswell and it should open up to this structure: 
 
 ![usb_structure](imgs/usb_file_structure.png)
+
+After you get this structure, we click the "$noname" file and we see this: 
+
+![$noname_structure](imgs/$noname_file_structure.png)
