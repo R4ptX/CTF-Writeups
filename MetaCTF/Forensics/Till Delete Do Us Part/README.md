@@ -19,3 +19,9 @@ If you do the recovery correctly, there should be a new img file that appears th
 After you get this structure, we click the "$noname" file and we see this: 
 
 ![$noname_structure](imgs/$noname_file_structure.png)
+
+From here, we click the ".Meta" file and if you look closely, there's a pattern of files that go down this file path. 
+
+As you go down the path, the string `MetaCTF{n0t_ev3n_d3l3t10n_c4n_s3part3_u5)` is revealed. 
+
+__Thanks for reading!__
