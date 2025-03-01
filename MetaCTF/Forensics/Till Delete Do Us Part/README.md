@@ -7,5 +7,8 @@ I was messing with trying to dual boot, and while trying to fix partitions, I ac
 ---
 In this challenge, we are tasked to download a corrupted iso partition file and try and recover the data that is lost. 
 
-__Step 1: download a notable data recovery software to try and repair the corrupted file.__
-For this challenge in particular, EaseUS Data Recovery was used. 
+__Step 1: Download a notable data recovery software to try and repair the corrupted file.__
+For this challenge in particular, DMDE (Disk Editor and Data Recovery Software) was used. 
+__Step 2: Open the usb file on DMDE.__
+If you do the recovery correctly, there should be a new img file that appears that's called usb.1. You click this file aswell and it should open up to this structure: 
+
