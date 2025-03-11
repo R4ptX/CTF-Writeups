@@ -67,6 +67,7 @@ CTF-Writeups/
 If you encounter any issues or have questions, feel free to:
 - Open an issue in the repository.
 - Ask us on our Discord server.
+- Please note that if the fork is already present, ensure it is synced.
 
 ---
 
