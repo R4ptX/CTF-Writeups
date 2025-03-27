@@ -11,7 +11,7 @@ In the twilight archives of Eldoria, Nyla studies an image of a mysterious monum
 **HTB{Name_Object}  
 Example: HTB{Pia_Pail} No special characters**
 
-![stone thar whispers.png](/Cyber Apocalypse CTF 2025/assets/OSINT/stone_thar_whispers.png)
+![stone thar whispers.png](./assets/OSINT/stone_thar_whispers.png)
 
 #### Solution:
 
