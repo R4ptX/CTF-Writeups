@@ -11,7 +11,7 @@ In the twilight archives of Eldoria, Nyla studies an image of a mysterious monum
 **HTB{Name_Object}  
 Example: HTB{Pia_Pail} No special characters**
 
-![stone thar whispers](assets/OSINT/stone_thar_whispers.png)
+![stone thar whispers](assets/stone_thar_whispers.png)
 
 #### Solution:
 
@@ -28,7 +28,7 @@ In the twilight archives of Eldoria, Nyla studies an image of an ancient Celtic 
 **HTB{Name_High_Cross}  
 Example: HTB{Kells_High_Cross} No special characters and avoid using the letter 's**
 
-![echoesinthestone.png](./assets/OSINT/echoesinthestone.png)
+![echoesinthestone.png](assets/echoesinthestone.png)
 
 #### Solution:
 
@@ -47,7 +47,7 @@ In the highest tower of Eldoria's archives, Nyla manipulates a crystal scrying g
 **The Mechanical Bird’s Nest: HTB{XX.XXX_-XXX.XXX}  
 Example: HTB{48.858_-222.294} Latitude and longitude format with a dash separating the coordinates**
 
-![birdnest.png](./assets/OSINT/birdnest.png)
+![birdnest.png](assets/birdnest.png)
 
 #### Solution:
 
@@ -55,7 +55,7 @@ We performed a **Google Reverse Image Search** to find visually similar location
 The results indicated that the image closely resembled parts of **Area 51**, a highly classified U.S. military base in Nevada.
 Using **Google Earth**, we manually explored the Area 51 region, comparing terrain features, structures, and runway layouts against the provided image.
 
-![BirdNest_Solution.png](./assets/OSINT/BirdNest_Solution.png)
+![BirdNest_Solution.png](assets/BirdNest_Solution.png)
 
 By carefully matching the landmarks, we pinpointed the precise location of the airstrip depicted in the challenge.
 
@@ -80,7 +80,7 @@ For this challenge, we focused on the IP address **139.5.177.205** provided in t
 
 At this point, we decided to proceed with **VirusTotal**, a widely-used platform for checking whether an IP address is associated with any known malware or threat actor. After entering **139.5.177.205** into the VirusTotal search bar, we found that the IP was flagged as being associated with **APT28**, also known as **Fancy Bear**, a notorious advanced persistent threat (APT) group. APT28 is known for its involvement in high-profile cyber espionage campaigns, particularly against government, military, and political organizations.
 
-![VirusTotal_APT.png](./assets/OSINT/VirusTotal_APT.png)
+![VirusTotal_APT.png](assets/VirusTotal_APT.png)
 
 **Flag:** `HTB{APT28}`
 
@@ -107,7 +107,7 @@ Nyla stands before her largest crystal, hands weaving intricate patterns as she 
 **HTB{Number_StreetnameRoad}  
 Example: HTB{13_OakwoodRoad} No special characters**
 
-![hillheavon.png](./assets/OSINT/hillheavon.png)
+![hillheavon.png](assets/hillheavon.png)
 
 #### Solution:
 
