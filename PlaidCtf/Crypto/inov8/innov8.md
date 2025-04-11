@@ -8,20 +8,20 @@ And node is another engine.
         output += [float(i) for i in subprocess.check_output('node gen.js', shell=True).decode().split()]
 
 ```
-Here when bit is null it use the js engine of chromiun v8 for generate 24 number and when it isn't null it use node js to generate the 24 next sequence.
+Here when bit is null, it uses the js engine of chromiun v8 for generate 24 number and when it isn't null it uses node js to generate the 24 next sequence.
 
 We can find that on some engine math.import() could be predictable.
 https://github.com/PwnFunction/v8-randomness-predictor
 
 And if we can determined what bit is 0 and what bit is 1, we can get the flag.
-We try on the first 24 sequence it's doesn't work.
+We try on the first 24 sequence, it doesn't work.
 So chromiun isn't predictable.
 However the next 24 sequence (node engine) is predictable.
 
 IT'S WIN!
 
-You could found the solution made by mathac [here](./solved.py).
+You could find the solution made by mathac [here](./solved.py).
 
 
 
-Run it and you get the flag et the password for the part 2.
+Run it and you get the flag and the password for the part 2.
