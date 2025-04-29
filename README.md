@@ -8,8 +8,8 @@ The repository is organized as follows:
 
 ```
 CTF-Writeups/
-├── Competition-Name/
-│   ├── Category/
+├── Category/
+│   ├── Competition-Name/
 │   │   ├── challenge-name.md
 ```
 
@@ -17,8 +17,8 @@ CTF-Writeups/
 
 ```
 CTF-Writeups/
-├── IrisCTF-2025/
-│   ├── Web/
+├── Web/
+│   ├── IrisCTF-2025/
 │   │   ├── bad-todo.md
 ```
 
