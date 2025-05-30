@@ -8,18 +8,30 @@ The repository is organized as follows:
 
 ```
 CTF-Writeups/
-├── Category/
-│   ├── Competition-Name/
-│   │   ├── challenge-name.md
-```
-
-### Example Structure:
-
-```
-CTF-Writeups/
-├── Web/
-│   ├── IrisCTF-2025/
-│   │   ├── bad-todo.md
+├── challenges/
+│   ├── web/
+│   │   ├── IrisCTF-2025/
+│   │   │   ├── bad-todo/
+│   │   │   │   ├── README.md
+│   │   │   │   ├── exploit.py
+│   │   │   │   ├── poc.sql
+│   │   │   │   ├── assets/
+│   │   │   │   │   ├── screenshot.png
+│   │   │   ├── another-challenge/
+│   │   │   │   ├── README.md
+│   │   ├── HackTheBox/
+│   │   │   ├── web-challenge-name/
+│   │   │   │   ├── README.md
+│   │   │   │   ├── burp-suite-config.xml
+│   ├── crypto/
+│   │   ├── CTFtime-2025/
+│   │   │   ├── crypto-puzzle/
+│   │   │   │   ├── README.md
+│   │   │   │   ├── solver.sage
+│   ├── pwn/
+│   ├── forensics/
+│   ├── rev/
+│   ├── misc/
 ```
 
 ## Purpose
