@@ -1,4 +1,4 @@
-**Author**: [Your Name or Handle, optional]
+**Writeup Author**: [Your Name or Handle, optional]
 
 ## Description
 [Provide the challenge description as given in the CTF, or summarize it. Include any provided files or links, e.g., `challenge.zip` or `http://challenge.ctf.com`.]
