@@ -1,9 +1,3 @@
-# [Challenge Name]
-
-**Event**: [CTF Name] [Year]  
-**Category**: [Category, e.g., Web, Crypto, Pwn]  
-**Points**: [Points, e.g., 100]  
-**Solves**: [Number of Solves, e.g., 42]  
 **Author**: [Your Name or Handle, optional]
 
 ## Description
