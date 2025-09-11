@@ -1,16 +1,18 @@
 ## Challenge
-
+```text
 gorevgohome
 points : 494
 Challenge creator : @gehaxelt
 Description : Prove you can rev or go home.
 Hint : docker run -it -v .:/app alpine:latest /bin/sh
-
+```
 
 ## Solution
 
 Downloading the binary, the first thing I’ve done is run `strings` on it. With that, we can instantly see it’s a Go binary based on all the runtime strings popping in the terminal.
-![[images/Pasted image 20250910204303.png]]
+
+![](./images/Pasted image 20250910204303.png)
+
 After that, I tried to run the binary but was met with an error that a file wasn’t found. Then, I opened Ghidra and was met with tons of functions that I didn’t understand. Since the binary wasn’t possible to debug, I decided to go see Rusty Flag and came back when the Docker hint came out.
 
 `docker run -it -v .:/app alpine:latest /bin/sh`
