@@ -1,11 +1,8 @@
 ## Challenge
-```text
-gorevgohome
-points : 494
-Challenge creator : @gehaxelt
-Description : Prove you can rev or go home.
-Hint : docker run -it -v .:/app alpine:latest /bin/sh
-```
+
+**Author** : @gehaxelt
+**Writeup Author** : P.S.Y
+**Challenge description** : Prove you can rev or go home.
 
 ## Solution
 
