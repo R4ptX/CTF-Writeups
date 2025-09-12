@@ -8,7 +8,7 @@
 
 Downloading the binary, the first thing I’ve done is run `strings` on it. With that, we can instantly see it’s a Go binary based on all the runtime strings popping in the terminal.
 
-![](./images/Pasted image 20250910204303.png)
+![](./images/Pasted-image-20250910204303.png)
 
 After that, I tried to run the binary but was met with an error that a file wasn’t found. Then, I opened Ghidra and was met with tons of functions that I didn’t understand. Since the binary wasn’t possible to debug, I decided to go see Rusty Flag and came back when the Docker hint came out.
 
@@ -32,15 +32,15 @@ apk add gdb
 (Spoiler: gdb wasn’t useful in the end.)
 
 I started with `strace` and saw that the binary was preventing `strace` from continuing by opening `/proc/self/status` in the file system. (That’s weird; I’ve never seen this type of anti-debug before.) Basically, the binary is checking the file for the `TracerPid` field to see if it’s being traced by another program (thank you ChatGPT)  
-![[Pasted image 20250910195641.png]]
+![](./images/Pasted-image-20250910195641.png)
 
 Now this is where the fun begins; the next thing I did was running `ltrace` on the binary and we are met with this output:
 
-![[images/Pasted image 20250910195825.png]]
+![](images/Pasted-image-20250910195825.png)
 
 This output is normal because the binary is not dynamically linked, but my brain, being hurt and tired from Rusty Flag, decided to `cat` `/proc/<PID>/exe`. I was expecting to see the Go binary again but was met with a smaller binary.
 
-![[images/Pasted image 20250910200545.png]]
+![](images/Pasted-image-20250910200545.png)
 
 In this small binary, we could see the strings of the checker being used:
 
@@ -53,15 +53,15 @@ Interesting, why would the binary be smaller? (After the CTF, I’ve learned tha
 
 After that, I’ve transferred the binary to a file and transferred it out of the Docker container to pass it to Ghidra. Once I’m in Ghidra, I instantly started searching for the checker string and went to the specified function.
 
-![[images/Pasted image 20250910201814.png]]
+![](images/Pasted-image-20250910201814.png)
 
 Once inside the function there’s only one thing catching my eye, and it’s those variables being XORed against four hex values:
 
-![[Pasted image 20250910202150.png]]
+![](Pasted-image-20250910202150.png)
 
 Looking at the assembly, we can see three globals being in use:
 
-![[images/Pasted image 20250910202513.png]]
+![](images/Pasted-image-20250910202513.png)
 
 ```text
 DAT_00403060
@@ -71,7 +71,7 @@ DAT_00403070
 
 Looking at those variables, we can see that those are hex blobs. Here’s `DAT_00403040` as an example:
 
-![[images/Pasted image 20250910202715.png]]
+![](images/Pasted-image-20250910202715.png)
 
 Based on all those values, I know that must be where the flag is hidden. With a snippet of the checker assembly code, the XOR keys, and the three hex blobs, we can build a script to decode the flag (thank you ChatGPT):
 
