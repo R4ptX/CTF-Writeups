@@ -1,3 +1,10 @@
+# Writeup Author
+hsw
+
+## Description
+I still like dogs, so I tried to make the previous version more secure. The treat is now in the root directory - that should help, shouldn't it?
+
+## Solution
 I guess everyone can easily do the v1, and just lacked a little luck for v2, yall know its only have pg_execute_server_program, i tested multiple time with https://book.hacktricks.wiki/en/network-services-pentesting/pentesting-postgresql.html?highlight=pentest%20postgre#rce with still no luck, after ~1 hour, i got the flag:
 
 ![](./images/gpt1.png)
