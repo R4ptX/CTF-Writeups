@@ -27,7 +27,7 @@ $$
 Le chiffrement utilise AES-CBC avec la clé :
 
 $$
-\text{key} = \operatorname{MSB}_{64}(S_{37}) \ \| \ \operatorname{MSB}_{64}(S_{38}).
+\text{key} = \mathrm{MSB}_{64}\!\left(S_{37}\right) \ \| \ \mathrm{MSB}_{64}\!\left(S_{38}\right).
 $$
 
 **Code du chall :**
@@ -251,3 +251,4 @@ flag: ictf{y3t_an07h3r_lcg_ch411_7b24ac314588057bfd4b70b10585a277}
 
 
 [linieq](https://github.com/TheBlupper/linineq/)
+
